@@ -1,14 +1,4 @@
-import {
-  SimpleGrid,
-  Heading,
-  Box,
-  Alert,
-  AlertIcon,
-  CircularProgress,
-  Center,
-  VStack,
-  Text,
-} from '@chakra-ui/react'
+import { SimpleGrid, Heading, Box, Alert, AlertIcon } from '@chakra-ui/react'
 import { Cupcake } from '../../models/Cupcake'
 import CupcakeCard from '../cards/CupcakeCard'
 import useFetch from '../../hooks/useFetch'

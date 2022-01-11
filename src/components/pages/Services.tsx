@@ -1,15 +1,4 @@
-import {
-  Alert,
-  CircularProgress,
-  AlertIcon,
-  Box,
-  Heading,
-  AlertTitle,
-  Accordion,
-  Center,
-  Text,
-  VStack,
-} from '@chakra-ui/react'
+import { Alert, AlertIcon, Box, Heading, Accordion } from '@chakra-ui/react'
 import useFetch from '../../hooks/useFetch'
 import { Service } from '../../models/Service'
 import ServiceAccordion from '../cards/ServiceAccordion'
