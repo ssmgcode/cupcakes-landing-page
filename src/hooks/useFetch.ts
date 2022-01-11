@@ -17,7 +17,7 @@ const useFetch = <T = undefined>({
       setIsDataLoading(true)
       try {
         axios.get(
-          'https://dreamy-shannon-6bac5d.netlify.app/.netlify/functions/hello-world'
+          'https://dreamy-shannon-6bac5d.netlify.com/.netlify/functions/hello-world'
         )
 
         const { data } = await axios.get(
