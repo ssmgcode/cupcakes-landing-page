@@ -16,7 +16,9 @@ const useFetch = <T = undefined>({
     const fetchData = async () => {
       setIsDataLoading(true)
       try {
-        const { data } = await axios.get(`/.netlify/functions/${endpoint}`)
+        const { data } = await axios.get(
+          `/.netlify/functions/data?requiredData=${endpoint}`
+        )
 
         setData(data)
         setIsDataLoading(false)

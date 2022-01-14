@@ -1,4 +1,4 @@
-module github.com/someone/services
+module github.com/someone/data
 
 go 1.15
 

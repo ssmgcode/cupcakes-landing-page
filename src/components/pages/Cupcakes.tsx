@@ -28,7 +28,7 @@ const Cupcakes = ({ title, isAtHome }: Props): JSX.Element => {
       ) : !cupcakes || cupcakes.length === 0 ? (
         <Alert status="warning">
           <AlertIcon />
-          No hay cupcakes a la venta :(
+          No hay cupcakes a la venta
         </Alert>
       ) : (
         <SimpleGrid minChildWidth="250px" spacing="40px">
