@@ -16,12 +16,8 @@ const useFetch = <T = undefined>({
     const fetchData = async () => {
       setIsDataLoading(true)
       try {
-        axios.get(
-          'https://dreamy-shannon-6bac5d.netlify.app/.netlify/functions/hello-world'
-        )
-
         const { data } = await axios.get(
-          `${process.env.REACT_APP_API_URL}${endpoint}`
+          `${process.env.URL}'/.netlify/functions/${endpoint}`
         )
 
         setData(data)

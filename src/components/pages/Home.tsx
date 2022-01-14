@@ -6,7 +6,7 @@ const Home = (): JSX.Element => {
   return (
     <>
       <HomeBanner />
-      <Cupcakes request="cupcakes?flavor_like=fresa" />
+      <Cupcakes isAtHome />
       <Services />
     </>
   )

@@ -6,14 +6,16 @@ import CircularLoader from '../sections/CircularLoader'
 import Error from '../sections/Error'
 
 interface Props {
-  request: string
   title?: boolean
+  isAtHome?: boolean
 }
 
-const Cupcakes = ({ request, title }: Props): JSX.Element => {
-  const [cupcakes, isDataLoading, error] = useFetch<Cupcake[]>({
-    endpoint: request,
+const Cupcakes = ({ title, isAtHome }: Props): JSX.Element => {
+  const [receivedCupcakes, isDataLoading, error] = useFetch<Cupcake[]>({
+    endpoint: 'cupcakes',
   })
+
+  const cupcakes = isAtHome ? receivedCupcakes?.slice(0, 2) : receivedCupcakes
 
   return (
     <Box paddingY="6" paddingX="10">

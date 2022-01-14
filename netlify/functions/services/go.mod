@@ -1,4 +1,4 @@
-module github.com/ssmgcode/hello-world
+module github.com/someone/services
 
 go 1.15
 
