@@ -1,6 +1,6 @@
 # Cupcakes landing page
 
-Fake cupcakes store landing page
+Fake cupcakes store landing page. Web site: https://dreamy-shannon-6bac5d.netlify.app/.
 
 ## Sections
 
