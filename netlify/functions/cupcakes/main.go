@@ -13,8 +13,7 @@ import (
 
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 	// Read `cupcakes.json` file
-	fmt.Println(os.Getenv("URL"))
-	content, err := ioutil.ReadFile("/manifest.json")
+	content, err := ioutil.ReadFile(os.Getenv("URL") + "/cupcakes.json")
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)
 	}

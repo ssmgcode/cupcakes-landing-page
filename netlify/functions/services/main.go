@@ -12,7 +12,7 @@ import (
 )
 
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
-	content, err := ioutil.ReadFile("./services.json")
+	content, err := ioutil.ReadFile(os.Getenv("URL") + "/services.json")
 	if err != nil {
 		log.Fatal("Error when opening file: ", err)
 	}
